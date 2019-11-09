@@ -1,26 +1,48 @@
-
-.container{
-  position: relative;
-  top: 100px;
-  width: 40%;
-  border: 1px solid grey;
-  margin: auto auto auto 100px;
-  overflow:auto;
+body {
+  background-color: grey;
 }
 
-.section{
+.container {
+  position: relative;
+  top: 100px;
+  width: 90%;
+  border: 1px solid grey;
+  margin: auto;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* main section for the work experience */
+.sectionA {
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: white;
   padding: 10px;
-  margin-top: 25px;
+}
+
+/* main section for the skill sets */
+.sectionB {
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Section: Main CSS Grid section  --- under sectionA */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.section {
   display: grid;
   grid-template: repeat(12, minmax(20px, auto)) / repeat(4, minmax(75px, auto));
-  font-family: 'Montserrat', sans-serif;
 }
 
 .job-title {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  /* border: 1px solid red; */
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #468ECC;
 }
@@ -28,8 +50,7 @@
 .job-org {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
-  /* border: 1px solid red; */
-  font-size: 10px;
+  font-size: 11px;
   color: #deb009;
   font-weight: bold;
 }
@@ -37,36 +58,88 @@
 .job-country {
   grid-column: 3 / -1;
   grid-row: 2 / 3;
-  /* border: 1px solid red; */
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .job-start {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  /* border: 1px solid red; */
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .job-project-title {
   grid-column: 1 / -1;
   grid-row: 4 / 5;
-  /* border: 1px solid red; */
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .flex-project {
   display: flex;
 }
 
-
-.job-tasks{
+.job-tasks {
   grid-column: 1 / -1;
   grid-row: 7 / 13;
   /* border: 1px solid red; */
-  font-size: 10px;
+  font-size: 11px;
+  margin-bottom: 50px;
 }
 
-#task1{
-  /* font-weight: bold; */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* CSS Grid Section 2: Section for Skill Sets - under sectionB */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.section2 {
+  /* display: grid; */
+  /* grid-template: repeat(1, minmax(200px, auto)) / repeat(4, minmax(200px, auto)); */
+}
+
+.skill-item {
+  /* grid-column: 1 / 3;
+  grid-row: 1 / -1; */
+  font-size: 11px;
+}
+
+
+.para-bold {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.list1 {
+  list-style: none;
+}
+
+.highlight-me {
+  color: #468ECC;
+  font-weight: bold;
+}
+
+.highlight-me2 {
+  color: #DEB009;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.highlight-me3{
+  color: #468ECC;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.local-flex {
+  display: flex;
+  justify-content: space-between;
+  line-height: 10px;
+}
+
+* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* CSS Grid Section 3: Section for Certifications - under sectionB */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.section2 {
+  margin-top: 100px;
+}
+
+.para-content{
+  font-size: 11px;
 }
